@@ -110,3 +110,9 @@ Temporary Items
 gradle/wrapper/gradle-wrapper.jar
 *.bin
 *.lock
+.gradle/7.1/executionHistory/executionHistory.bin
+.gradle/7.1/executionHistory/executionHistory.lock
+.gradle/7.1/fileHashes/fileHashes.bin
+.gradle/7.1/fileHashes/fileHashes.lock
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+build/tmp/compileJava/previous-compilation-data.bin
