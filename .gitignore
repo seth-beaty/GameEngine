@@ -107,3 +107,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.bin
+gradle/wrapper/gradle-wrapper.jar
+*.bin
+*.lock
