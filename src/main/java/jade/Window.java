@@ -137,7 +137,6 @@ public class Window {
                 currentScene.update(dt);
             }
 
-
             // Detect if controller is present
             // TODO: Create callbacks and code to handle controllers
 
