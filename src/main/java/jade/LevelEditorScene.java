@@ -14,10 +14,10 @@ public class LevelEditorScene extends Scene {
 
     private float[] vertexArray = {
         // position                 // color
-        0.5f, -0.5f, 0.0f,          1.0f, 0.0f, 0.0f, 1.0f,  // Bottom right
-        -0.5f, 0.5f, 0.0f,          0.0f, 1.0f, 0.0f, 1.0f,  // Top left
-        0.5f,  0.5f, 0.0f,          0.0f, 0.0f, 1.0f, 1.0f,  // Top right
-        -0.5f, -0.5f, 0.0f,         1.0f, 1.0f, 0.0f, 1.0f,  // Bottom left
+        0.5f, -0.5f, 0.0f,          1.0f, 0.0f, 0.0f, 1.0f,  // Bottom right 0
+        -0.5f, 0.5f, 0.0f,          0.0f, 1.0f, 0.0f, 1.0f,  // Top left     1
+        0.5f,  0.5f, 0.0f,          0.0f, 0.0f, 1.0f, 1.0f,  // Top right    2
+        -0.5f, -0.5f, 0.0f,         1.0f, 1.0f, 0.0f, 1.0f,  // Bottom left  3
     };
 
     // IMPORTANT: Must be in counter-clockwise order
@@ -55,7 +55,7 @@ public class LevelEditorScene extends Scene {
         FloatBuffer vertexBuffer = BufferUtils.createFloatBuffer(vertexArray.length);
         vertexBuffer.put(vertexArray).flip();
 
-        // Create VBO
+        // Create VBO and upload the vertex buffer
         vboID = glGenBuffers();
         glBindBuffer(GL_ARRAY_BUFFER, vboID);
         glBufferData(GL_ARRAY_BUFFER, vertexBuffer, GL_STATIC_DRAW);
