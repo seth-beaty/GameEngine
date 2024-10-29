@@ -28,7 +28,7 @@ public class Renderer {
             if (batch.hasRoom()) {
                 batch.addSprite(sprite);
                 added = true;
-                break;;
+                break;
             }
         }
 
