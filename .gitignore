@@ -2,6 +2,15 @@
 .gradle
 /build/
 
+.idea/*
+build/*
+gradle/*
+.gradle/*
+uiPreview.svg
+tilesets.svg
+assets/fonts/*
+assets/*.svg
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
