@@ -52,7 +52,7 @@ public class RenderBatch {
         // Allocate space for vertices
         vboID = glGenBuffers();
         glBindBuffer(GL_ARRAY_BUFFER, vboID);
-        glBufferData(GL_ARRAY_BUFFER, vertices.length * Float.BYTES, GL_DYNAMIC_DRAW);
+        glBufferData(GL_ARRAY_BUFFER, (long) vertices.length * Float.BYTES, GL_DYNAMIC_DRAW);
 
         // Create and upload indices buffer
         int eboID = glGenBuffers();
@@ -120,7 +120,7 @@ public class RenderBatch {
         float yAdd = 1.0f;
         for (int i = 0; i < 4; i++) {
             if (i == 1) {
-                yAdd = 1.0f;
+                yAdd = 0.0f;
             } else if (i == 2) {
                 xAdd = 0.0f;
             } else if (i == 3) {
